@@ -55,9 +55,11 @@ Make sure you have:
 
 Python 3.8+
 pip or conda
-Recommended Libraries:
-- pip install pandas numpy matplotlib seaborn scikit-learn
 
+Recommended Libraries:
+```
+pip install pandas numpy matplotlib seaborn scikit-learn
+```
 Usage
 Load the Dataset
 import pandas as pd
@@ -67,8 +69,10 @@ columns = [
     "node-caps", "deg-malig", "breast", "breast-quad", "irradiat"
 ]
 
+```
 df = pd.read_csv("breast-cancer.data", names=columns)
 print(df.head())
+```
 
 ### Exploratory Data Analysis (EDA)
 
@@ -99,21 +103,24 @@ Random Forest
 Support Vector Machines (SVM)
 Gradient Boosting
 
-Example:
-
+#### Example:
+```
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 
 X = df.drop("Class", axis=1)
 y = df["Class"]
+```
 
 ### Apply encoding before this step
-
+```
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
 
 model = RandomForestClassifier()
 model.fit(X_train, y_train)
-📊 Evaluation Metrics
+```
+
+### Evaluation Metrics
 
 Use appropriate metrics for classification:
 
@@ -133,5 +140,8 @@ Repository Structure
 ├── README.md              # Project documentation
 └── notebooks/             # (Optional) Jupyter notebooks
 References
+
+### Authors
+- Marco A. Lapcevic (Liaison)
 Dataset commonly sourced from the UCI Machine Learning Repository
 Used for educational and research purposes in classification problems
