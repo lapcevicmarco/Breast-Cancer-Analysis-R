@@ -135,10 +135,13 @@ Feature selection techniques
 Handling class imbalance (SMOTE, class weights)
 Cross-validation
 Repository Structure
+```
 ├── breast-cancer.data     # Dataset
 ├── breast-cancer.names    # Metadata and feature descriptions
 ├── README.md              # Project documentation
 └── notebooks/             # (Optional) Jupyter notebooks
+```
+
 References
 
 ### Authors
