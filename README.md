@@ -9,8 +9,10 @@ Exploratory Data Analysis (EDA)
 Data preprocessing and feature engineering
 Machine learning model development
 Evaluation of predictive performance
-📂 Dataset Description
-1. breast-cancer.data
+
+## Dataset Description
+
+### 1. breast-cancer.data
 
 A comma-separated dataset where each row represents a patient case.
 
@@ -28,14 +30,16 @@ Degree of malignancy
 Breast (left/right)
 Breast quadrant
 Irradiation status
-2. breast-cancer.names
+
+## 2. breast-cancer.names
 
 Contains metadata and attribute descriptions, including:
 
 Feature definitions
 Possible categorical values
 Dataset background information
-🧠 Problem Statement
+
+### Problem Statement
 
 Given patient attributes, predict whether a breast cancer case will result in:
 
@@ -44,16 +48,17 @@ No recurrence
 
 This is a binary classification problem.
 
-⚙️ Getting Started
-🔧 Prerequisites
+- Getting Started
+- Prerequisites
 
 Make sure you have:
 
 Python 3.8+
 pip or conda
-📦 Recommended Libraries
-pip install pandas numpy matplotlib seaborn scikit-learn
-🚀 Usage
+Recommended Libraries:
+- pip install pandas numpy matplotlib seaborn scikit-learn
+
+Usage
 Load the Dataset
 import pandas as pd
 
@@ -64,7 +69,8 @@ columns = [
 
 df = pd.read_csv("breast-cancer.data", names=columns)
 print(df.head())
-🔍 Exploratory Data Analysis (EDA)
+
+### Exploratory Data Analysis (EDA)
 
 Suggested steps:
 
@@ -72,7 +78,9 @@ Check class distribution
 Handle missing values (e.g., "?")
 Visualize categorical relationships
 Encode categorical variables
-🏗️ Data Preprocessing
+
+
+### Data Preprocessing
 
 Typical preprocessing steps:
 
@@ -80,7 +88,8 @@ Replace missing values
 Encode categorical features (One-Hot or Label Encoding)
 Split into training/testing sets
 Normalize if necessary
-🤖 Model Development
+
+### Model Development
 
 You can experiment with models such as:
 
@@ -98,7 +107,7 @@ from sklearn.ensemble import RandomForestClassifier
 X = df.drop("Class", axis=1)
 y = df["Class"]
 
-# Apply encoding before this step
+## Apply encoding before this step
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
 
@@ -113,12 +122,12 @@ Precision
 Recall
 F1-score
 Confusion Matrix
-📈 Potential Improvements
-Hyperparameter tuning (GridSearchCV)
+Potential Improvements:
+- Hyperparameter tuning (GridSearchCV)
 Feature selection techniques
 Handling class imbalance (SMOTE, class weights)
 Cross-validation
-🗂️ Repository Structure
+Repository Structure
 ├── breast-cancer.data     # Dataset
 ├── breast-cancer.names    # Metadata and feature descriptions
 ├── README.md              # Project documentation
