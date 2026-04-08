@@ -107,7 +107,7 @@ from sklearn.ensemble import RandomForestClassifier
 X = df.drop("Class", axis=1)
 y = df["Class"]
 
-## Apply encoding before this step
+### Apply encoding before this step
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
 
