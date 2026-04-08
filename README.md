@@ -132,6 +132,6 @@ Repository Structure
 ├── breast-cancer.names    # Metadata and feature descriptions
 ├── README.md              # Project documentation
 └── notebooks/             # (Optional) Jupyter notebooks
-📚 References
+References
 Dataset commonly sourced from the UCI Machine Learning Repository
 Used for educational and research purposes in classification problems
