@@ -31,7 +31,7 @@ Breast (left/right)
 Breast quadrant
 Irradiation status
 
-## 2. breast-cancer.names
+### 2. breast-cancer.names
 
 Contains metadata and attribute descriptions, including:
 
