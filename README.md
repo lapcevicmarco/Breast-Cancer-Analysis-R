@@ -142,9 +142,9 @@ Repository Structure
 └── notebooks/             # (Optional) Jupyter notebooks
 ```
 
-References
+### References
+Dataset commonly sourced from the UCI Machine Learning Repository
+Used for educational and research purposes in classification problems
 
 ### Authors
 - Marco A. Lapcevic (Liaison)
-Dataset commonly sourced from the UCI Machine Learning Repository
-Used for educational and research purposes in classification problems
